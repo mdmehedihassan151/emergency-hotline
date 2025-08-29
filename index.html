@@ -27,7 +27,7 @@
             <div class="flex items-center justify-between ">
 
             <div class="flex items-center justify-center border-1 border-none bg-[#41ff6b1a]  rounded-3xl mr-[20px]  w-[120px] h-[40px]">    
-                <span>0</span>
+                <span id="heartCount">0</span>
             <img class="w-[30px] h-[30px] ml-[10px]" src="./assets2/heart.png" alt="">
         </div>
             
@@ -35,7 +35,7 @@
                 <span class="">100</span>
                 <img class="w-[30px] h-[30px] ml-[10px]" src="assets2/coin.png" alt="">
              </div>
-                <button id="addMoney-btn" class="btn bg-[#00a63e] rounded-3xl text-white  w-[120px] h-[40px]"><span>2</span>copy</button>
+                <button id="addMoney-btn" class="btn bg-[#00a63e] rounded-3xl text-white  w-[120px] h-[40px]"><span>0</span>Copy</button>
                 </div>
         </div>
         </div>
@@ -65,7 +65,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+   <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">জাতীয় জরুরি সেবা</h1>
@@ -91,7 +93,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/police.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">পুলিশ</h1>
@@ -117,7 +121,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/fire-service.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">ফায়ার সার্ভিস</h1>
@@ -144,7 +150,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/ambulance.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+    <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">অ্যাম্বুলেন্স</h1>
@@ -169,7 +177,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">নারী ও শিশু সহায়তা</h1>
@@ -194,7 +204,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">দুদক</h1>
@@ -219,7 +231,9 @@
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
         <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">বিদ্যুৎ বিভ্রাট</h1>
@@ -243,8 +257,10 @@
             <div class="card bg-white  shadow-lg shadow-[#00000026] w-[300px] h-[250px]">
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
-        <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+        <img class="w-[50px] h-[50px]" src="./assets2/brac.png" alt="">
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">ব্র্যাক</h1>
@@ -268,8 +284,10 @@
             <div class="card bg-white  shadow-lg shadow-[#00000026] w-[300px] h-[250px]">
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
-        <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-     <i class="fa-solid fa-heart"></i>
+        <img class="w-[50px] h-[50px]" src="./assets2/Bangladesh-Railway.png" alt="">
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
+</button>
      </div>
      <div>
         <h1 class="font-bold">বাংলাদেশ রেলওয়ে</h1>
@@ -289,7 +307,7 @@
         </div>
             </div>
         </div>
-       <div>
+       <div class="card-right-div">
         <div class=" rounded-xl h-[780px] w-[250px] ml-4 bg-[#ffffff] shadow-lg shadow-[#00000026] flex p-4 justify-between">
          <p class="font-[500]"><i class="fa-solid fa-clock"></i>Call History</p>
          <button id="addMoney-btn" class="btn bg-[#00a63e] rounded-3xl text-white  w-[60px] h-[30px]">Clear</button>
