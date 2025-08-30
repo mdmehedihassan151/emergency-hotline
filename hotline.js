@@ -40,11 +40,11 @@ document.querySelectorAll(".call-btn").forEach(btn => {
             historyDiv.prepend(callItem);
 
             
-            alert(`emergency-service.netlify.app says\nNational Emergency: ${number}`);
+            alert(`National Emergency: ${number}`);
 
         } else {
             
-            alert("emergency-service.netlify.app says\nআপনার পর্যাপ্ত কয়েন নেই । কল করতে ২০ কয়েন প্রয়োজন।");
+            alert("আপনার পর্যাপ্ত কয়েন নেই । কল করতে ২০ কয়েন প্রয়োজন।");
         }
     });
 });
