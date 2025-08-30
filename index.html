@@ -26,17 +26,18 @@
             
             <div class="flex items-center justify-between ">
 
-            <div class="flex items-center justify-center border-1 border-none bg-[#41ff6b1a]  rounded-3xl mr-[20px]  w-[120px] h-[40px]">    
-                <span id="heartCount">0</span>
-            <img class="w-[30px] h-[30px] ml-[10px]" src="./assets2/heart.png" alt="">
-        </div>
-            
-             <div class="flex justify-center items-center border-1 border-none bg-[#41ff6b1a]  rounded-3xl mr-[20px] w-[120px] h-[40px]">
-                <span class="">100</span>
-                <img class="w-[30px] h-[30px] ml-[10px]" src="assets2/coin.png" alt="">
-             </div>
-                <button id="addMoney-btn" class="btn bg-[#00a63e] rounded-3xl text-white  w-[120px] h-[40px]"><span>0</span>Copy</button>
-                </div>
+            <div class="counter flex items-center justify-center border-1 border-none bg-[#41ff6b1a]  rounded-3xl mr-[20px]  w-[120px] h-[40px]">    
+    <span id="count">0</span>
+    <img class="w-[30px] h-[30px] ml-[10px]" src="./assets2/heart.png" alt="">
+</div>
+                
+<div class="flex justify-center items-center border-1 border-none bg-[#41ff6b1a]  rounded-3xl mr-[20px] w-[120px] h-[40px]">
+    <span id="coin-count">100</span>
+    <img class="w-[30px] h-[30px] ml-[10px]" src="assets2/coin.png" alt="">
+</div>
+
+      <button id="addMoney-btn" class="btn bg-[#00a63e] rounded-3xl text-white  w-[120px] h-[40px]"><span id="copy-count">0</span>Copy</button>
+   </div>
         </div>
         </div>
 
@@ -59,13 +60,13 @@
 
         <div class="parent-card   grid grid-cols-3 grid-row-3 gap-4  ">
 
-            <div class="  h-[250px] w-[300px]">
+            <div class=" h-[250px] w-[300px]">
                  <div class="">
-            <div class="card bg-white shadow-lg shadow-[#00000026] w-[300px] h-[250px]">
+            <div class="card bg-white  shadow-lg shadow-[#00000026] w-[300px] h-[250px]">
   <div class="card-body p-[20px]">
      <div class="flex justify-between items-center mb-[10px]">
-        <img class="w-[50px] h-[50px]" src="./assets2/emergency.png" alt="">
-   <button onclick="addHeart()" class="btn bg-white border-none btn-square">
+        <img class="w-[50px] h-[50px]" src="./assets2/fire-service.png" alt="">
+     <button onclick="addHeart()" class="btn bg-white border-none btn-square">
   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
 </button>
      </div>
@@ -74,13 +75,19 @@
      <p>National Emergency</p>
      </div>
      
-    <div class="">
-        <h1 class="font-extrabold ">999</h1>
-    <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">সার্বজনীন </p>
+    <div class="my-[10px]">
+        <h1 class="font-extrabold phone-number">999</h1>
+    <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">সার্বজনীন</p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -103,12 +110,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">999</h1>
+        <h1 class="font-extrabold phone-number">999</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">পুলিশ</p>
     </div>
     <div class="mx-[10px]">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -131,12 +144,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">999</h1>
+        <h1 class="font-extrabold phone-number">999</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">ফায়ার </p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -160,12 +179,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">1994-999999</h1>
+        <h1 class="font-extrabold phone-number">1994-999999</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">স্বাস্থ্য </p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -187,12 +212,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">109</h1>
+        <h1 class="font-extrabold phone-number">109</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">সহায়তা </p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -214,12 +245,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">106</h1>
+        <h1 class="font-extrabold phone-number">106</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">সরকারি</p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -241,12 +278,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">16216</h1>
+        <h1 class="font-extrabold phone-number">16216</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">বিদ্যুৎ</p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -268,12 +311,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">163</h1>
+        <h1 class="font-extrabold phone-number">163</h1>
     <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">পরিবহন</p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -295,12 +344,18 @@
      </div>
      
     <div class="my-[10px]">
-        <h1 class="font-extrabold ">163</h1>
-    <p class="border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">পরিবহন</p>
+        <h1 class="font-extrabold phone-number ">163</h1>
+    <p class=" border-1 border-none bg-[#f2f2f2]  rounded-3xl w-[80px] h-[25px] flex items-center justify-center">পরিবহন</p>
     </div>
     <div class="mx-auto">
-      <button class="btn bg-white w-[110px] h-[30px]"><i class="fa-solid fa-copy"></i>Copy </button>
-      <button class="btn bg-[#00a63e] text-white w-[110px] h-[30px]"><i class="fa-solid fa-phone"></i> Call</button>
+      <button class="btn copy-btn bg-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-copy"></i> Copy
+</button>
+
+      <button class="btn call-btn bg-[#00a63e] text-white w-[110px] h-[30px]">
+  <i class="fa-solid fa-phone"></i> Call
+</button>
+
     </div>
   </div>
 </div>
@@ -308,16 +363,29 @@
             </div>
         </div>
        <div class="card-right-div">
-        <div class=" rounded-xl h-[780px] w-[250px] ml-4 bg-[#ffffff] shadow-lg shadow-[#00000026] flex p-4 justify-between">
-         <p class="font-[500]"><i class="fa-solid fa-clock"></i>Call History</p>
-         <button id="addMoney-btn" class="btn bg-[#00a63e] rounded-3xl text-white  w-[60px] h-[30px]">Clear</button>
-        </div>
-       </div>
+  
+
+  <div class="card-right-div">
+  <div class="rounded-xl h-[780px] w-[250px] ml-4 bg-[#ffffff] shadow-lg shadow-[#00000026] flex flex-col p-4 justify-start gap-2 my-">
+  
+    <div class="flex justify-between items-center">
+      <p class="font-[500] text-lg"><i class="mx-2 fa-solid fa-clock"></i>Call History</p>
+      <button onclick="clearAllHistory()" id="callHistory" class="btn bg-[#00a63e] rounded-3xl text-white w-[60px] h-[30px]">Clear</button>
+    </div>
+
+    <!-- History List -->
+    <div id="history" class="flex flex-col gap-2 mt-4 overflow-y-auto h-[600px]">
+     
+    </div>
+  </div>
+</div>
+</div>
+
+
 
        </div>
 
 
-      
 
     <script src="./hotline.js"></script>
 </body>
